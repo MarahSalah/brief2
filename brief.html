@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARAH SALAH</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* الستايلات هنا */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            background-color: rgb(51, 59, 80);
+            color: white;
+        }
+
+        .navbar {
+            background-color: rgb(51, 59, 80);
+            position: fixed; /* جعل الـ Navbar ثابتًا بأعلى الصفحة */
+            width: 100%; /* جعل الـ Navbar يمتد على عرض الصفحة بالكامل */
+            z-index: 1000; /* تحديد ترتيب الطبقة للـ Navbar أعلى من طبقات العناصر الأخرى */
+        }
+
+        .navbar-light .navbar-toggler-icon {
+            background-color: rgb(51, 59, 80);
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: rgb(51, 59, 80);
+        }
+
+        .background-image {
+            background-image: url("computer.jpg");
+            background-size: cover;
+            background-position: top right;
+            height: 100vh;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            opacity: 0.8;
+        }
+
+        .name-box {
+            background-color: rgb(99, 115, 156);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .left-box {
+            background-color: rgb(95, 116, 143);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: whitesmoke;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #projects {
+            font-size: 24px;
+            padding: 50px 0;
+        }
+
+        .project-box {
+            width: 100%;
+        }
+
+        .project-card {
+            background-color: rgb(99, 115, 156);
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        #education-experience {
+            font-size: 24px;
+            padding: 50px 0;
+        }
+
+        #education-experience h3 {
+            color: whitesmoke;
+        }
+
+        #education-experience h3 + .section-box h5 {
+            color: whitesmoke;
+        }
+
+        .section-box {
+            background-color: whitesmoke;
+            color: rgb(89, 104, 141);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #skills {
+            font-size: 24px;
+            padding: 50px 0;
+        }
+
+        .skills-box {
+            background-color: rgb(89, 104, 141);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #contact {
+            font-size: 24px;
+            padding: 50px 0;
+        }
+
+        .contact-box {
+            background-color: rgb(89, 104, 141);
+            color: white;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">MARAH SALAH</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">MY PROJECT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education-experience">EDUCATION & EXPERIENCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-12 col-md-8 background-image">
+                <div class="name-box">
+                    <h1 class="text-center">HI THERE, I'M A DEVELOPER</h1>
+                    <h4 class="text-center">perfect solution to your website</h4>
+                </div>
+            </div>
+            <div class="col-md-4 left-box">
+                <img src="profile.webp">
+                <hr>
+                <h4><p>Marah Salah</p></h4>
+                <h6><p>"Hello, I am a computer science graduate with five months of experience in software development.
+                 I am seeking an opportunity to enhance my skills and share my expertise in the field of information technology."</p></h6>
+                <p>Amman, Jordan</p>
+            </div>
+        </div>
+
+        <div id="projects" class="row mt-4">
+            <div class="col-md-12 project-box section-box">
+                <h2 class="section-title">PROJECT</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="auction project.html">
+                            <div class="card project-card">
+                                <img src="logo2.png" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Auction online</h5>
+                                    <p class="card-text">Android Application</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="filix project.html">
+                            <div class="card project-card">
+                                <img src="logo1.png" class="card-img-top" alt="Project 2" height="350px">
+                                <div class="card-body">
+                                    <h5 class="card-title">FIXIT</h5>
+                                    <p class="card-text">Android Application and PHP language</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="project3.html">
+                            <div class="card project-card">
+                                <img src="qusetion.png" class="card-img-top" alt="Project 3" height="350px">
+                                <div class="card-body">
+                                    <h5 class="card-title">!!!! Soon</h5>
+                                    <p class="card-text"> Website by javascript and html</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="education-experience" class="row mt-4">
+            <div class="col-md-12 section-box">
+                <h2 class="section-title">EDUCATION AND EXPERIENCE :</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 style="color: rgb(89, 104, 141);">Education :</h3>
+                        <div class="card-box section-card">
+                            <div class="card section-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zarqa University College</h5>
+                                    <p class="card-text">Diploma in information and network security</p>
+                                </div>
+                            </div>
+                            <div class="card section-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Philadelphia University</h5>
+                                    <p class="card-text">Bachelor's degree in Computer Science</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 style="color: rgb(89, 104, 141);">Experience :</h3>
+                        <div class="card-box section-card">
+                            <div class="card section-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Experience 1</h5>
+                                    <p class="card-text">Description of Experience 1</p>
+                                </div>
+                            </div>
+                            <div class="card section-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Experience 2</h5>
+                                    <p class="card-text">Description of Experience 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills" class="row mt-4">
+            <div class="col-md-12 skills-box">
+                <h2 class="section-title">PERSONAL SKILLS :</h2>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="android.png" class="card-img-top" alt="Skill 1">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="c-.png" class="card-img-top" alt="Skill 2">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="css-3.png" class="card-img-top" alt="Skill 3">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="html-5.png" class="card-img-top" alt="Skill 4">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="flutter.png" class="card-img-top" alt="Skill 5">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="java.png" class="card-img-top" alt="Skill 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="row mt-4">
+            <div class="col-md-12 contact-box" >
+                <h2 class="section-title" >GET IN TOUCH</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea class="form-control" id="message" rows="6" placeholder="Write your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white text-center py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Email: marahsalah@gmail.com</p>
+                        <p>Phone: +962788875653</p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#" class="mr-3"><img src="linkedin.png" alt="LinkedIn" width="10%" height="50%"></a>
+                        <a href="#"><img src="github.png" alt="GitHub" width="10%" height="50%"></a>
+                    </div>
+                </div>
+                <p class="mt-3">&copy; 2023 by MARAH SALAH</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
